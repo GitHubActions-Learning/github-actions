@@ -9,4 +9,3 @@ jobs:
         - name: list the file
           run: |
             ls -ltr
-            touch 123
