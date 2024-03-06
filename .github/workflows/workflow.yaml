@@ -4,7 +4,7 @@ jobs:
   shell-commands:
     runs-on: ubuntu-latest
     steps: 
-        - name: print a string
+        - name: echo nt a string
           run: echo "Hello World"
         - name: list the file
           run: |
