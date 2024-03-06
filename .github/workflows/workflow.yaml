@@ -8,4 +8,16 @@ jobs:
           run: echo "Hello World"
         - name: list the file
           run: |
+            touch test
             ls -ltr
+  Parellel-jobs:
+    runs-on: macos-latest 
+    steps:
+      - name: view sw version
+        run: sw_vers
+  dependent-jobs:
+    runs-on: windows-latest
+    needs: shell-commands
+    steps:
+      - name: print a string
+        run: Write-Output "Windows String"
