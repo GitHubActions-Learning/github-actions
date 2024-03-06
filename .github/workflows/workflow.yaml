@@ -8,5 +8,5 @@ jobs:
           run: echo "Hello World"
         - name: list the file
           run: |
-           - ls -ltr
-           - touch 123
+            ls -ltr
+            touch 123
